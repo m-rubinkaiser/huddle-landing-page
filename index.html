@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @font-face {
+      font-family: poppins;
+      src: url(https://fonts.google.com/specimen/Poppins);
+    }
+
+    body {
+      margin: 0;
+      color: white;
+      width: 100%;
+      background: url("images/bg-desktop.svg");
+      background-color: blue;
+    }
+
+    * {
+      margin: 0;
+    }
+
+    .links,
+    a {
+      text-align: right;
+      margin-left: 8px;
+      margin-right: 8px;
+      margin-top: 10px;
+    }
+
+    .container {
+      margin-right: 30px;
+    }
+
+    .fa {
+      border: solid white;
+      color: white;
+      border-radius: 50%;
+      padding: 10px;
+      min-width: 12px;
+      text-align: center;
+    }
+
+    button {
+      background-color: aqua;
+      border-radius: 30px;
+      height: 50px;
+      width: 200px;
+      margin: 10px;
+      font-size: 17px;
+    }
+    button:hover{ 
+      color: blue;
+      background-color: rgb(180, 244, 220);
+      transition-duration: 0.3s;
+    }
+    .logo {
+      margin-top: 1%;
+      margin-left: 30px;
+      height: 120px;
+      width: 200px;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+     
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 30px;
+      height: 500px;
+      align-items: center;
+
+    }
+
+    h6 {
+      margin: -2%;
+      margin-top: 40px;
+      font-family: Poppins;
+      font-size: 60px;
+      
+      
+    }
+
+    p {
+      font-family: Open Sans;
+      font-size: 23px;
+      margin: 10px;
+    }
+
+    .content1,
+    img {
+      width: 100%;
+    }
+
+    .content2 {
+      margin-left: 2%;
+      margin-bottom: 10px;
+    }
+    @media(max-width:1400px){
+      h6{
+        font-size: 50px;
+      }
+      p{
+        font-size: 18px;
+      }
+    }
+    @media(max-width:1200px){
+      h6{
+        font-size: 45px;
+      }
+      p{
+        font-size: 15px;
+      }
+    }
+    @media(max-width:800px){
+      h6{
+        font-size: 40px;
+      }
+      p{
+        font-size: 12px;
+      }
+    }
+    @media(max-width:480px){
+      body{
+        background: url("images/bg-mobile.svg");
+        background-color: blue;
+        height: 110vh;
+      }
+      .content{
+        display: block;
+        text-align: center;
+        margin: 30px;
+      }
+      p{
+        font-size: 15px;
+      }
+      h6{
+        font-size: 29px;
+      }
+      .links{
+        text-align: center;
+        margin: 0;
+        margin-top: 60px;
+      }
+      .logo{
+        height: 60px;
+        width: 120px;
+      }
+      .content{
+        margin-bottom: 20px;
+      }
+      .container{
+        margin-right: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <img class="logo" src="images/logo.svg" alt="">
+  <div class="content">
+    <div class="content1">
+      <img src="images/illustration-mockups.svg" alt="">
+    </div>
+    <div class="content2">
+      <h6>Build The Community Your Fans Will Love</h6>
+
+      <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+        Create connections with your users as you engage in genuine discussion.</p>
+
+      <button type="submit">Register</button>
+    </div>
+  </div>
+
+  <div class="container"><div class="links">
+    <a href="https://www.facebook.com/rubin.kaiser.5"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/m.r.k.rubin/"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.youtube.com/@mrkgaming7618"><i class="fa fa-youtube"></i></a>
+  </div>
+</div>
+</body>
+
+</html>
